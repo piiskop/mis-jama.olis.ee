@@ -17,4 +17,6 @@ Varasemaid kuupäevakatalooge ei muudeta. Server kontrollib SHA-256 räsisid, ke
 
 ## Seis
 
-22.10.2026 kokkuvõte on ONS-is avalik ja HTTPS töötab. Serveri allalaadimistaimer ning ChatGPT igapäevane koostamisülesanne vajavad enne kasutuselevõttu eraldi paigaldamist ja prooviuuendust. Hoidla olemasolu ei tähenda nende käivitumist.
+22. ja 23.10.2026 kokkuvõtted on ONS-is avalikud ning HTTPS töötab. Serveri viieminutiline allalaadimistaimer paigaldati 24.10.2026; tegelik prooviuuendus lisas 23. oktoobri lehe automaatselt ja see avati avaliku HTTPS-aadressi kaudu.
+
+Igapäevase koostamisülesande loomise katse 24.10.2026 ebaõnnestus: konto piirang on viis ajastatud ülesannet ja kõik kohad on kasutusel. Päeviku koostamise ajastust EI LOODUD. Kavandatud aeg on iga päev kell 08.00 Europe/Tallinn. Jätkamiseks peab kasutaja valima, millise olemasoleva ülesande peatada. Tööjuhis on failis `AUTOMATION.md`.

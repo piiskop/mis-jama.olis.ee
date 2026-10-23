@@ -160,6 +160,66 @@ function openStory(id, trigger) {
   dialog.showModal();
   dialog.scrollTop = 0;
   document.body.classList.add('dialog-open');
+  if (id === 'wbo') addStoryImages();
+}
+
+let storyImagesPromise;
+async function addStoryImages() {
+  const section = document.createElement('section');
+  section.className = 'story-images';
+  section.innerHTML = '<h3>Juhtumi kuvatõmmised</h3><p class="image-loading" role="status">Laadin pilte…</p>';
+  document.querySelector('#dialog-content .dialog-state').before(section);
+  try {
+    storyImagesPromise ||= fetch('../', { cache: 'no-cache' }).then(response => {
+      if (!response.ok) throw new Error('Pildilisa ei avanenud');
+      return response.text();
+    }).then(html => {
+      const source = new DOMParser().parseFromString(html, 'text/html');
+      return ['wbo-empty', 'wbo-error', 'wbo-content'].map(id => {
+        const card = source.querySelector('#pilt-' + id);
+        const image = card?.querySelector('img');
+        const caption = card?.querySelector('figcaption p');
+        const title = card?.querySelector('h3');
+        if (!image || !caption || !title || !image.getAttribute('src').startsWith('data:image/png;base64,')) throw new Error('Pilt puudub');
+        return { src: image.getAttribute('src'), alt: image.alt, title: title.textContent, caption: caption.textContent };
+      });
+    }).catch(error => { storyImagesPromise = null; throw error; });
+    const images = await storyImagesPromise;
+    if (!section.isConnected) return;
+    section.querySelector('.image-loading').remove();
+    images.forEach(item => {
+      const figure = document.createElement('figure');
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'story-image-open';
+      button.setAttribute('aria-label', 'Suurenda: ' + item.title);
+      button.setAttribute('aria-haspopup', 'dialog');
+      const image = document.createElement('img');
+      image.src = item.src; image.alt = item.alt; image.loading = 'lazy';
+      button.append(image);
+      const hint = document.createElement('span'); hint.textContent = 'Vaata suuremalt ↗'; button.append(hint);
+      button.addEventListener('click', () => showStoryImage(item, button));
+      const caption = document.createElement('figcaption');
+      const title = document.createElement('strong'); title.textContent = item.title;
+      const detail = document.createElement('p'); detail.textContent = item.caption;
+      caption.append(title, detail); figure.append(button, caption); section.append(figure);
+    });
+  } catch {
+    if (section.isConnected) section.querySelector('.image-loading').innerHTML = 'Pildid ei laadinud. <a href="../#pildid">Ava juhtumi pildilisa ↗</a>';
+  }
+}
+
+function showStoryImage(item, trigger) {
+  const viewer = document.createElement('dialog');
+  viewer.className = 'story-image-dialog';
+  viewer.setAttribute('aria-label', item.title);
+  const close = document.createElement('button'); close.type = 'button'; close.className = 'story-image-close'; close.textContent = 'Sulge pilt ×';
+  close.addEventListener('click', () => viewer.close());
+  const image = document.createElement('img'); image.src = item.src; image.alt = item.alt;
+  const caption = document.createElement('p'); caption.textContent = item.caption;
+  viewer.append(close, image, caption); document.body.append(viewer);
+  viewer.addEventListener('close', () => { viewer.remove(); trigger.focus({ preventScroll: true }); }, { once: true });
+  viewer.showModal();
 }
 
 function closeStory() { dialog.close(); }

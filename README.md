@@ -19,4 +19,8 @@ Varasemaid kuupäevakatalooge ei muudeta. Server kontrollib SHA-256 räsisid, ke
 
 22. ja 23.10.2026 kokkuvõtted on ONS-is avalikud ning HTTPS töötab. Serveri viieminutiline allalaadimistaimer paigaldati 24.10.2026; tegelik prooviuuendus lisas 23. oktoobri lehe automaatselt ja see avati avaliku HTTPS-aadressi kaudu.
 
-Igapäevase koostamise ülesanne „Eilse päeva jamapäevik” on 24.10.2026 seisuga aktiivne. Ajastus: iga päev kell 08.00 Europe/Tallinn. Serveri allalaadimine on pärislehega kontrollitud; ajastuse aktiveerimine ise ei tähenda veel esimese ajastatud jooksu toimumist. Tööjuhis on failis `AUTOMATION.md`.
+Igapäevase koostamisülesande loomise katse 24.10.2026 ebaõnnestus: konto piirang on viis ajastatud ülesannet ja kõik kohad on kasutusel. Päeviku koostamise ajastust EI LOODUD. Kavandatud aeg on iga päev kell 08.00 Europe/Tallinn. Jätkamiseks peab kasutaja valima, millise olemasoleva ülesande peatada. Tööjuhis on failis `AUTOMATION.md`.
+
+## Sisupiltide paigutuse ühekordne parandus
+
+23. oktoobri Whitebophiri loo kolm kuvatõmmist on nüüd ka loo dialoogis ja avanevad suuremalt. Varem paigaldatud serveri päevakaitse ei kirjuta vana päeva üle. Värskenda oma kloon selle paranduse commit'ile ning käivita `sudo python3 server/install-story-images.py`. See kontrollib seniste failide SHA-256 väärtusi, teeb varukoopia `/var/backups/mis-jama-story-images/` alla ja asendab ainult 23. oktoobri `app.js` ning `style.css` failid. Seejärel käivita `sudo systemctl start mis-jama-update.service`. Kuni parandus pole serveris rakendatud, katkestab päevakaitse uue manifesti lugemise olemasoleva päeva erinevuse tõttu. Pärast paigaldust jätkab olemasolev taimer tavapärast tööd. Brauseris tee Ctrl+Shift+R.

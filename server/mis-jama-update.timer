@@ -1,0 +1,10 @@
+[Unit]
+Description=Kontrolli jamapäeviku uusi päevi iga viie minuti järel
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=5min
+Unit=mis-jama-update.service
+
+[Install]
+WantedBy=timers.target

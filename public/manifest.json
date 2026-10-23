@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "index": {
+    "bytes": 4358,
+    "sha256": "741f765b366610c23ddebe630e3f2e25c15269d9239cfcd8413d88e6e0c1464b"
+  },
+  "days": [
+    {
+      "date": "2026-10-22",
+      "files": {
+        "app.js": {
+          "bytes": 12025,
+          "sha256": "fb978e2574e83121ba63e994aada572c3323494e568534ba65b41798a9b0c130"
+        },
+        "favicon.svg": {
+          "bytes": 245,
+          "sha256": "376ca3d39758444e05c50a9db0ee77727804cbf519fb64de37223444c3bb7015"
+        },
+        "index.html": {
+          "bytes": 8693,
+          "sha256": "a36663e810a2743844b6620d6757265868226ad5a9d8d8c8b474a5ed7e52554f"
+        },
+        "style.css": {
+          "bytes": 25291,
+          "sha256": "777c6fc99d1900073f4287576d458db3ed3fb0a88724bc6daf16ef9143eabf65"
+        }
+      }
+    }
+  ]
+}

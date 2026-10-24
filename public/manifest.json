@@ -1,16 +1,16 @@
 {
   "version": 1,
   "index": {
-    "bytes": 788091,
-    "sha256": "87035bd7cc107da156f4a9bd3f1e439c3b229617edede94ef67e14cc617a8f30"
+    "bytes": 1745639,
+    "sha256": "e9867749b233553e13d797909bee60aaf140399357d0a485dfaf7aa8a4df94e8"
   },
   "days": [
     {
       "date": "2026-10-22",
       "files": {
         "app.js": {
-          "bytes": 12025,
-          "sha256": "fb978e2574e83121ba63e994aada572c3323494e568534ba65b41798a9b0c130"
+          "bytes": 15503,
+          "sha256": "3b9b660a038bb52c85e43af03fa1b100ca318521406cd9008f62a160f95cab7d"
         },
         "favicon.svg": {
           "bytes": 245,
@@ -21,8 +21,8 @@
           "sha256": "a36663e810a2743844b6620d6757265868226ad5a9d8d8c8b474a5ed7e52554f"
         },
         "style.css": {
-          "bytes": 25291,
-          "sha256": "777c6fc99d1900073f4287576d458db3ed3fb0a88724bc6daf16ef9143eabf65"
+          "bytes": 26609,
+          "sha256": "9d43b9ff7fe589f032b5114aac00f20d61705db61e68b470770e63e43468418f"
         }
       }
     },
@@ -30,8 +30,8 @@
       "date": "2026-10-23",
       "files": {
         "app.js": {
-          "bytes": 14013,
-          "sha256": "7177b0caf0fbe3fa80bc2b4825d54197409a4955d81ca6dad922898abd4faf4d"
+          "bytes": 14118,
+          "sha256": "f5be86298993db24a9d9ad7cc748ba3839600e189727fd7f33cf5caf87f74a3f"
         },
         "favicon.svg": {
           "bytes": 245,

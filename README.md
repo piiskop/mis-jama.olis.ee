@@ -21,6 +21,8 @@ Varasemaid kuupäevakatalooge ei muudeta. Server kontrollib SHA-256 räsisid, ke
 
 Igapäevase koostamisülesande loomise katse 24.10.2026 ebaõnnestus: konto piirang on viis ajastatud ülesannet ja kõik kohad on kasutusel. Päeviku koostamise ajastust EI LOODUD. Kavandatud aeg on iga päev kell 08.00 Europe/Tallinn. Jätkamiseks peab kasutaja valima, millise olemasoleva ülesande peatada. Tööjuhis on failis `AUTOMATION.md`.
 
-## Sisupiltide paigutuse ühekordne parandus
+## Lugude sisupiltide ühine paigaldus
 
-23. oktoobri Whitebophiri loo kolm kuvatõmmist on nüüd ka loo dialoogis ja avanevad suuremalt. Varem paigaldatud serveri päevakaitse ei kirjuta vana päeva üle. Värskenda oma kloon selle paranduse commit'ile ning käivita `sudo python3 server/install-story-images.py`. See kontrollib seniste failide SHA-256 väärtusi, teeb varukoopia `/var/backups/mis-jama-story-images/` alla ja asendab ainult 23. oktoobri `app.js` ning `style.css` failid. Seejärel käivita `sudo systemctl start mis-jama-update.service`. Kuni parandus pole serveris rakendatud, katkestab päevakaitse uue manifesti lugemise olemasoleva päeva erinevuse tõttu. Pärast paigaldust jätkab olemasolev taimer tavapärast tööd. Brauseris tee Ctrl+Shift+R.
+Pildid on ette valmistatud kuue loo sisse mõlemal päeval, allkirjade ja suurendusvaatega. Kõik 12 lugu on üle vaadatud: täpne seis on failis IMAGE-AUDIT.md. See ei tähenda, et kõik lood oleksid piltidega valmis.
+
+Serveris värskenda kloon selle paranduse commit'ile, käivita `sudo python3 server/install-story-images.py` ja seejärel `sudo systemctl start mis-jama-update.service`. Ühine paigaldaja sobib nii algse versiooni kui ka varasema Whitebophiri paranduse peale. See kontrollib kõiki seniseid faile enne muutmist, teeb varukoopia ning asendab ainult mõlema päeva app.js ja style.css failid. Tundmatu kohaliku muudatuse korral katkestab enne kirjutamist. Kuni parandus pole rakendatud, ei lase vana päevakaitse muutunud päevade manifestiga uuendust läbi. Pärast paigaldust jätkab taimer tööd. Brauseris Ctrl+Shift+R.

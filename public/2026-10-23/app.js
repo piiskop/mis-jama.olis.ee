@@ -160,11 +160,13 @@ function openStory(id, trigger) {
   dialog.showModal();
   dialog.scrollTop = 0;
   document.body.classList.add('dialog-open');
-  if (id === 'wbo') addStoryImages();
+  const imageIds = {"jatka": ["jatka-upload"], "paste": ["paste-check"], "wbo": ["wbo-empty", "wbo-error", "wbo-content"]}[id];
+  if (imageIds) addStoryImages(imageIds);
+
 }
 
 let storyImagesPromise;
-async function addStoryImages() {
+async function addStoryImages(imageIds) {
   const section = document.createElement('section');
   section.className = 'story-images';
   section.innerHTML = '<h3>Juhtumi kuvatõmmised</h3><p class="image-loading" role="status">Laadin pilte…</p>';
@@ -175,16 +177,17 @@ async function addStoryImages() {
       return response.text();
     }).then(html => {
       const source = new DOMParser().parseFromString(html, 'text/html');
-      return ['wbo-empty', 'wbo-error', 'wbo-content'].map(id => {
-        const card = source.querySelector('#pilt-' + id);
-        const image = card?.querySelector('img');
-        const caption = card?.querySelector('figcaption p');
-        const title = card?.querySelector('h3');
-        if (!image || !caption || !title || !image.getAttribute('src').startsWith('data:image/png;base64,')) throw new Error('Pilt puudub');
-        return { src: image.getAttribute('src'), alt: image.alt, title: title.textContent, caption: caption.textContent };
-      });
+      return source;
     }).catch(error => { storyImagesPromise = null; throw error; });
-    const images = await storyImagesPromise;
+    const source = await storyImagesPromise;
+    const images = imageIds.map(id => {
+      const card=source.querySelector('#pilt-'+id);
+      const image=card?.querySelector('img');
+      const caption=card?.querySelector('figcaption p');
+      const title=card?.querySelector('h3');
+      if (!image || !caption || !title || !/^data:image\/(png|jpeg);base64,/.test(image.getAttribute('src'))) throw new Error('Pilt puudub');
+      return {src:image.getAttribute('src'),alt:image.alt,title:title.textContent,caption:caption.textContent};
+    });
     if (!section.isConnected) return;
     section.querySelector('.image-loading').remove();
     images.forEach(item => {

@@ -23,6 +23,14 @@ def install(root,state,backups):
     if current==new: continue
     if digest(current) not in allowed.get(name,set()): raise ValueError('Ootamatu kohalik muudatus: '+day+'/'+name)
     key=Path(day)/name;replacements[key]=new;originals[key]=current
+  # The image gallery lives in the archive index. Install it in the same
+  # locked operation as the readers; do not rely on a later timer run.
+  index=root/'index.html'; new_index=(source/'index.html').read_bytes()
+  if index.is_symlink() or not index.is_file(): raise ValueError('Vigane arhiivi avaleht')
+  if len(new_index)!=manifest['index']['bytes'] or digest(new_index)!=manifest['index']['sha256']: raise ValueError('Avalehte ei saa kontrollida')
+  current_index=index.read_bytes()
+  if current_index!=new_index:
+   replacements[Path('index.html')]=new_index;originals[Path('index.html')]=current_index
   if not replacements:
    print('Lugude sisupildid on juba paigaldatud.');return
   backup=backups/datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ');backup.mkdir(parents=True,mode=0o700)

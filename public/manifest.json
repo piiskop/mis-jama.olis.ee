@@ -51,8 +51,8 @@
       "date": "2026-10-24",
       "files": {
         "app.js": {
-          "bytes": 11494,
-          "sha256": "2c642caf32f10b2c1e2cdcb93a717fa67286400c5f37c08fe4773a18ffdd9673"
+          "bytes": 286503,
+          "sha256": "32cac4376b0df6accaae2b187d835749dcd62e8acd0b6f14af1c6311b4ffa61e"
         },
         "favicon.svg": {
           "bytes": 245,

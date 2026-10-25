@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Install authorized story images after validating both existing days."""
+"""Install authorized story images after validating existing days."""
 import argparse, datetime, fcntl, hashlib, json, os, shutil, tempfile
 from pathlib import Path
 OLD = {
  '2026-10-22': {'app.js': {'fb978e2574e83121ba63e994aada572c3323494e568534ba65b41798a9b0c130'},'style.css': {'777c6fc99d1900073f4287576d458db3ed3fb0a88724bc6daf16ef9143eabf65'}},
  '2026-10-23': {'app.js': {'78ac739130cf93c438ce519b12e69702157c17e392bd125d375388b5945cc893','7177b0caf0fbe3fa80bc2b4825d54197409a4955d81ca6dad922898abd4faf4d'},'style.css': {'777c6fc99d1900073f4287576d458db3ed3fb0a88724bc6daf16ef9143eabf65','9d43b9ff7fe589f032b5114aac00f20d61705db61e68b470770e63e43468418f'}}}
+OLD['2026-10-24'] = {'app.js': {'e445bf1c1b59c84776fe13dc366fb4f456e76089068abb91c6fa35dd457ff143'}}
 def digest(data): return hashlib.sha256(data).hexdigest()
 def install(root,state,backups):
  source=Path(__file__).resolve().parents[1]/'public'
@@ -45,6 +46,7 @@ def install(root,state,backups):
    except BaseException:
     for key in originals:shutil.copyfile(backup/key,root/key)
     raise
-  print('Kuue loo sisupiltide tugi paigaldatud. Varukoopia:',backup)
+  print('Lugude sisupildid paigaldatud. Varukoopia:',backup)
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=Path('/var/www/mis-jama.olis.ee'));p.add_argument('--state-dir',type=Path,default=Path('/var/lib/mis-jama'));p.add_argument('--backup-root',type=Path,default=Path('/var/backups/mis-jama-story-images'));a=p.parse_args();install(a.root,a.state_dir,a.backup_root)
+

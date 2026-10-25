@@ -5,7 +5,7 @@ from pathlib import Path
 OLD = {
  '2026-10-22': {'app.js': {'fb978e2574e83121ba63e994aada572c3323494e568534ba65b41798a9b0c130'},'style.css': {'777c6fc99d1900073f4287576d458db3ed3fb0a88724bc6daf16ef9143eabf65'}},
  '2026-10-23': {'app.js': {'78ac739130cf93c438ce519b12e69702157c17e392bd125d375388b5945cc893','7177b0caf0fbe3fa80bc2b4825d54197409a4955d81ca6dad922898abd4faf4d'},'style.css': {'777c6fc99d1900073f4287576d458db3ed3fb0a88724bc6daf16ef9143eabf65','9d43b9ff7fe589f032b5114aac00f20d61705db61e68b470770e63e43468418f'}}}
-OLD['2026-10-24'] = {'app.js': {'e445bf1c1b59c84776fe13dc366fb4f456e76089068abb91c6fa35dd457ff143'}}
+OLD['2026-10-24'] = {'app.js': {'2c642caf32f10b2c1e2cdcb93a717fa67286400c5f37c08fe4773a18ffdd9673'}}
 def digest(data): return hashlib.sha256(data).hexdigest()
 def install(root,state,backups):
  source=Path(__file__).resolve().parents[1]/'public'

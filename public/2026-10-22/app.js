@@ -64,6 +64,8 @@ const stories = [
   }
 ];
 
+const solutionDetails = {"paypal": "<section class=\"solution-detail\" aria-label=\"Lahenduskäigu täpsustus\"><h3>Tehtud töövõte</h3><ol><li>Ava PayPali ülariba paremas osas teavituste kellukese menüü, mille juures on lugemata teadete arv.</li><li>Ava sealt <strong>Inbox (1)</strong> ning vaata postkasti ja teavituse loendurit uuesti.</li></ol><p><strong>Kontroll ja tulemus.</strong> Pärast Inboxi avamist kadus tähis „1”; kasutaja kinnitas kadumist. Sundvärskendamist ei läinud vaja.</p><p>See oli teavituse oleku taastumine selles juhtumis. Eraldi „märgi kõik loetuks” käsku ei kasutatud.</p><p style=\"font-size:.85em\">Lahenduskäik täpsustatud 28.10.2026 algallikate põhjal.</p></section>", "spam": "<section class=\"solution-detail\" aria-label=\"Lahenduskäigu täpsustus\"><h3>Kuidas kiri rämpspostiks märgiti</h3><ol><li>Ava või vali soovimatu kiri.</li><li>Vajuta kirjavaate ülemisel tööriistaribal nuppu <strong>Spam</strong>; selles vaates asus see <strong>Archive</strong> ja <strong>Delete</strong> vahel.</li></ol><p><strong>Kontroll ja tulemus.</strong> Kiri märgiti rämpspostiks. See toiming ei tõesta, et kõik sama saatja tulevased kirjad automaatselt filtreeritakse.</p><p>Juhis kirjeldab kuvatõmmisel olnud kirjavaadet; rakenduse nime ei ole algallikast üheselt kinnitatud.</p><p style=\"font-size:.85em\">Lahenduskäik täpsustatud 28.10.2026 algallikate põhjal.</p></section>", "github": "<section class=\"solution-detail\" aria-label=\"Lahenduskäigu täpsustus\"><h3>Kontroll enne kommentaari kordussaatmist</h3><ol><li>Ava sama GitHubi veateade uuesti ja vaata selle kommentaaride ajalugu.</li><li>Otsi enda viimast teksti enne selle uuesti saatmist. Selles juhtumis leidus sama tekst juba kaks korda.</li></ol><p><strong>Kontroll ja tulemus.</strong> Kommentaar polnud kadunud. Üleliigse koopia kustutamist soovitati, kuid kustutamise tulemust ei kinnitatud.</p><p style=\"font-size:.85em\">Lahenduskäik täpsustatud 28.10.2026 algallikate põhjal.</p></section>"};
+
 const grid = document.querySelector('#story-grid');
 const search = document.querySelector('#story-search');
 const empty = document.querySelector('#empty-state');
@@ -110,6 +112,7 @@ function openStory(id, trigger) {
     <section class="dialog-section"><h3>Mis juhtus?</h3><p>${escapeHTML(story.happened)}</p></section>
     <section class="dialog-section"><h3>Mida tehti?</h3><ul>${story.tried.map(item => `<li>${escapeHTML(item)}</li>`).join('')}</ul></section>
     <section class="dialog-state"><h3>22. OKTOOBRI SEIS</h3><p>${escapeHTML(story.state)}</p></section>`;
+  document.querySelector('#dialog-content').insertAdjacentHTML('beforeend', solutionDetails[story.id] || '');
   dialog.showModal();
   dialog.scrollTop = 0;
   document.body.classList.add('dialog-open');

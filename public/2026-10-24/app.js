@@ -58,6 +58,8 @@ const stories = [
   }
 ];
 
+const solutionDetails = {"valem": "<section class=\"solution-detail\" aria-label=\"Lahenduskäigu täpsustus\"><h3>Toimiv ajutine kleepimisvõte</h3><ol><li>Vali lahter, kuhu soovid valemi panna, ja tühjenda selle olemasolev sisu valemiribalt.</li><li>Kleebi uus valem <strong>tühja valemiribasse</strong> klahvidega <strong>Ctrl+V</strong>.</li><li>Kontrolli, et ribal on soovitud valem ning lahtri tulemus vastab sellele.</li></ol><p><strong>Kontroll ja tulemus.</strong> Kasutaja kinnitas tühja ribasse kleepimisel õiget valemit. Olemasoleva valemi otse asendamine põhjustas endiselt vea.</p><p>Keskkond: Windowsi ONLYOFFICE Desktop Editors 10.0.0.169 (exe). Konkreetset Ctrl+A/Delete/Enter klahvijärjestust ei olnud selles katses kinnitatud.</p><p style=\"font-size:.85em\">Lahenduskäik täpsustatud 28.10.2026 algallikate põhjal.</p></section>", "mtp": "<section class=\"solution-detail\" aria-label=\"Lahenduskäigu täpsustus\"><h3>Kuidas eristati tühja vaadet kadunud failidest</h3><ol><li>Ava telefonis endas fotod või sama DCIM/Camera-kaust ja kontrolli sisu seal.</li><li>Võrdle telefonis nähtavat sisu Windowsi USB/MTP-failivaatega.</li></ol><p><strong>Kontroll ja tulemus.</strong> Telefonis olid failid alles ning ühendus hiljem taastus. Arvuti tühi kaustavaade ei tähendanud selles juhtumis failide kustumist.</p><p>Taastumise täpset põhjustanud toimingut ei kinnitatud. Kaabli eemaldamist, režiimivahetust ega vahemälu puhastamist ei saa selle juhtumi lahendussammuks nimetada.</p><p style=\"font-size:.85em\">Lahenduskäik täpsustatud 28.10.2026 algallikate põhjal.</p></section>", "brave": "<section class=\"solution-detail\" aria-label=\"Lahenduskäigu täpsustus\"><h3>Ajutine töövõte: 1080p</h3><ol><li>Laadi YouTube’i videoleht Brave’is uuesti.</li><li>Ava videopleieri parema alanurga hammasratas ja vali <strong>Quality → 1080p</strong>.</li><li>Jätka taasesitust ning vaata, kas laadimisring lakkab ja puhver hakkab kasvama.</li></ol><p><strong>Kontroll ja tulemus.</strong> 24. oktoobri katses mängis 1080p sujuvalt ning Buffer Health kasvas umbes 82 sekundini. 2160p hangumine kordus ka pärast Brave’i taaskäivitamist.</p><p>Keskkond: Linux, Brave 1.98.60. 1080p kasutas AV1 ja 2160p VP9 koodekit, seega ei erista see katse eraldusvõime ja koodeki mõju. Filtriloendite uuendamine andis vaid ajutise paranemise.</p><p style=\"font-size:.85em\">Lahenduskäik täpsustatud 28.10.2026 algallikate põhjal.</p></section>"};
+
 const grid = document.querySelector('#story-grid');
 const search = document.querySelector('#story-search');
 const empty = document.querySelector('#empty-state');
@@ -104,6 +106,7 @@ function openStory(id, trigger) {
     <section class="dialog-section"><h3>Mis juhtus?</h3><p>${escapeHTML(story.happened)}</p></section>
     <section class="dialog-section"><h3>Mida tehti?</h3><ul>${story.tried.map(item => `<li>${escapeHTML(item)}</li>`).join('')}</ul></section>
     <section class="dialog-state"><h3>24. OKTOOBRI SEIS</h3><p>${escapeHTML(story.state)}</p></section>`;
+  document.querySelector('#dialog-content').insertAdjacentHTML('beforeend', solutionDetails[story.id] || '');
   dialog.showModal();
   dialog.scrollTop = 0;
   document.body.classList.add('dialog-open');

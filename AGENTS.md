@@ -33,3 +33,7 @@ Kasutaja nõue (28.10.2026): päevik peab aitama lugejal sama tõrget diagnoosid
 - Lahendamata juhtumil loetle konkreetsed proovitud sammud ja igaühe tulemus ning seni teadmata asjaolu. Assistendi ettepanek on „soovitatud, katsetamata”, kuni kasutaja katse on kinnitatud.
 - Pilt täiendab samme, kuid ei asenda neid. Ära täida lugu üldiste ettevaatuslausete või assistendi töö aruandega.
 - Enne avaldamist loe iga lahendatud lugu lugejana: kas ta saab tekstis toodud eeldustel toimingu korrata ja tulemust kontrollida? Kui ei, täpsusta või nimeta tõendatud teabelünk.
+
+
+28.10.2026 kasutaja tellis olemasolevate lugude sisulise täiendamise korratavate lahendussammudega. See erand hõlmab 22.–27.10 kuut päevafaili; muudatused ja kontrollitud teabelüngad on STORY-DETAILS-AUDIT.md failis. Serveris rakendab need server/install-story-details.py (räsikontroll, varukoopia, ühine uuenduslukk ja vea korral taastamine). Päevade lõpuseisud ja pildid säilivad. Ära taasta vanu räsisid ega käsitle seda teadliku täpsustuse asemel uue päeva sündmusena.
+

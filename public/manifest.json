@@ -9,8 +9,8 @@
       "date": "2026-10-22",
       "files": {
         "app.js": {
-          "bytes": 15503,
-          "sha256": "3b9b660a038bb52c85e43af03fa1b100ca318521406cd9008f62a160f95cab7d"
+          "bytes": 17649,
+          "sha256": "0e6cccad9e87845cdf5cbf30d4539762d351e789b708407ed14a33215fd7d7b8"
         },
         "favicon.svg": {
           "bytes": 245,
@@ -30,8 +30,8 @@
       "date": "2026-10-23",
       "files": {
         "app.js": {
-          "bytes": 14118,
-          "sha256": "f5be86298993db24a9d9ad7cc748ba3839600e189727fd7f33cf5caf87f74a3f"
+          "bytes": 18672,
+          "sha256": "1578304b34c4ab558598cb35fa507228b1c43a913285c69571384ff632f27973"
         },
         "favicon.svg": {
           "bytes": 245,
@@ -51,8 +51,8 @@
       "date": "2026-10-24",
       "files": {
         "app.js": {
-          "bytes": 286503,
-          "sha256": "32cac4376b0df6accaae2b187d835749dcd62e8acd0b6f14af1c6311b4ffa61e"
+          "bytes": 289098,
+          "sha256": "2855c75b401cb11caacada163e131a41ac8d7a20a5f0279268d278bc59a5196e"
         },
         "favicon.svg": {
           "bytes": 245,
@@ -72,8 +72,8 @@
       "date": "2026-10-25",
       "files": {
         "index.html": {
-          "bytes": 1600,
-          "sha256": "6d350f5ad11554e84897abab9bf273bb0610104d182b9c974f62a32b9ee6e6ee"
+          "bytes": 3875,
+          "sha256": "22ec310b62bdf20949b53b6fb3f90ebdfa801c9636c5dcc364f7b1ce954e390e"
         }
       }
     },
@@ -81,8 +81,8 @@
       "date": "2026-10-26",
       "files": {
         "index.html": {
-          "bytes": 200265,
-          "sha256": "f77b8f31c15240c6bdf432478270f4c0af2583b419a5a83de46f56847679923c"
+          "bytes": 202680,
+          "sha256": "f5838fbd1f27a7395f1af90beb0780bcfa417f6f29288ee0eae4b316dd2c320d"
         }
       }
     },
@@ -102,8 +102,8 @@
           "sha256": "4bfc5403f4c7853badab1045f55e105a4c89dfca01656d3f8eff2803e6834b44"
         },
         "index.html": {
-          "bytes": 5461,
-          "sha256": "73bbd9ae80b09aee75ddb2088ac55f8a69802b56689130bff412e01c38315927"
+          "bytes": 9886,
+          "sha256": "82733da9646af98a3294ebb1143ba1a6d3232b8a1f2d6b681beeeea67e82d74c"
         },
         "obs.png": {
           "bytes": 27044,

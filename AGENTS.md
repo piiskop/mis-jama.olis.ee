@@ -20,3 +20,16 @@
 
 
 Piltide kontroll enne avaldamist: vaata iga uue loo algsed kuvatõmmised läbi. Enne valmisoleku kinnitamist ava iga lugu ja kontrolli pildi nähtavust ning suurendust. Kui lugu jääb pildita, nimeta konkreetne põhjus lõppvastuses. Ära eemalda pildiviiteid uue päeva loomisel ilma asenduseta. 24.10.2026 kolme loo pildid on kasutaja tellitud visuaalne parandus; app.js sisaldab kärbitud pilte ja ei laadi neid arhiivi avalehelt. Serveri vanade päevade kaitse tõttu paigaldatakse see parandus install-story-images.py abil.
+
+
+## Lahenduskäigu kohustuslik täpsus
+
+Kasutaja nõue (28.10.2026): päevik peab aitama lugejal sama tõrget diagnoosida ja lahendust korrata. Üldine „sai korda”, „parandatud fail toimib” või „aitas taaskäivitus” ei ole piisav lahenduskirjeldus.
+
+- Kirjelda konkreetne tegevus ja oodatud ning tegelik tulemus: rakendus, asjakohane versioon/operatsioonisüsteem ja vea käivitav samm, kui need on allikas olemas.
+- Lahendatud juhtumi juures esita nummerdatud tegelikult tehtud sammud. Anna allikast kontrollitud menüütee, nupu nimi, seadistus ja väärtus, täielik käsk või vajalik kood. Failiparanduse korral selgita, mida failis muudeti; pelk „uus fail” ei ole juhend.
+- Kirjelda, kuidas tulemust kontrolliti ja mida kasutaja kinnitas. Erista püsiv parandus, ajutine töövõte ja üksik õnnestunud katse. Ära omista üldisele „toimib” kinnitusele konkreetset eelnenud soovitust ilma tõendita.
+- Kui allikas ei sisalda täpset lahenduskäiku, otsi seotud algvestlusest. Kui samme siiski ei selgu, kirjuta „Toimimine kinnitatud; täpsed lahendussammud pole allikast kinnitatud” ja nimeta, milline teave puudub. Ära leiuta nupukombinatsiooni, kestust, käsku ega põhjuslikku seost.
+- Lahendamata juhtumil loetle konkreetsed proovitud sammud ja igaühe tulemus ning seni teadmata asjaolu. Assistendi ettepanek on „soovitatud, katsetamata”, kuni kasutaja katse on kinnitatud.
+- Pilt täiendab samme, kuid ei asenda neid. Ära täida lugu üldiste ettevaatuslausete või assistendi töö aruandega.
+- Enne avaldamist loe iga lahendatud lugu lugejana: kas ta saab tekstis toodud eeldustel toimingu korrata ja tulemust kontrollida? Kui ei, täpsusta või nimeta tõendatud teabelünk.

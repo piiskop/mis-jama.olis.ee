@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1747130,
-    "sha256": "ccec8b32d975e6e86db3a025e8ea3c3356d23516844af6e5ce1eb20ce98d8a2e"
+    "bytes": 1747488,
+    "sha256": "448cfb9ce23f885a851e4865ced2237fb3af63e542688f3782c720fedb531afb"
   },
   "days": [
     {
@@ -112,6 +112,23 @@
         "versions.png": {
           "bytes": 19354,
           "sha256": "09643a8d8fd7cd6d55199519653d94359f05ad9f9f743d0fa99c18dded2f7396"
+        }
+      }
+    },
+    {
+      "date": "2026-10-28",
+      "files": {
+        "index.html": {
+          "bytes": 5551,
+          "sha256": "eae4e2b9b1d020d322b9698c47e457be63cfe048b11fb9d0ea3a462ba3a9e18b"
+        },
+        "mathcitymap.png": {
+          "bytes": 132398,
+          "sha256": "61bf7f7fc8dbbaa8e1840b53a9beb119fa8a0d986d267c597a501cc7c4290026"
+        },
+        "onlyoffice.png": {
+          "bytes": 21624,
+          "sha256": "7408599957580d8d53f8efcea50cb98964110505786285d22b165126c4e7d3dc"
         }
       }
     }

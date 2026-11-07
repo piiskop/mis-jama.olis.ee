@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1749840,
-    "sha256": "7132cbf38c543db0d7a2b2e6a2ef6fb3cc97f56d7b33bfe058a0f0f572e7db2e"
+    "bytes": 1750095,
+    "sha256": "d217aad96a106b7845b9a9425765fb8fd303062bff97ab06b41ab1dc8cdab074"
   },
   "days": [
     {
@@ -397,6 +397,55 @@
         "version.png": {
           "bytes": 31796,
           "sha256": "50f24763311bedccfce67dd6914f14a091809ba5dbea6b0741d22c769120b88d"
+        }
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "files": {
+        "drawio.png": {
+          "bytes": 118782,
+          "sha256": "51df4bc772923ad14a298771306ec094c221b470beeb3ce1cfcddb2f535dcf60"
+        },
+        "file-copy.png": {
+          "bytes": 5780,
+          "sha256": "18ad96314b3b3210ee4dfd1699c32a866a7b395130c83c4910986c668e0585de"
+        },
+        "file-search.png": {
+          "bytes": 7131,
+          "sha256": "74da36db2ca84b7e8badddab1d1c21eaf4b5385a6376a8a3913c6ab83dda99fc"
+        },
+        "index.html": {
+          "bytes": 16861,
+          "sha256": "a76ddee94cfded41ccd3b88edead2df23d6ae67b37bdf23585f0a11b4add7ea8"
+        },
+        "jellyfin.png": {
+          "bytes": 26511,
+          "sha256": "636a5bf2fc8ef09a035fc618605908735a3b31bb20cc591729cb24e58b11566f"
+        },
+        "mathcitymap.png": {
+          "bytes": 9631,
+          "sha256": "5955c84de1dbe237a3a159e024479ee58233c9303351572fff9c0668d6368e81"
+        },
+        "onlyoffice.png": {
+          "bytes": 83466,
+          "sha256": "0857b29f95bf0aaee12f1e3cf690f8bf2fd7ca67eea8aa78763ae4308988e832"
+        },
+        "openproject-error.png": {
+          "bytes": 7576,
+          "sha256": "701d7720fa5b4e895825559d658ec03b465439dc9f58597bcefe4a133d4dfa31"
+        },
+        "openproject-feature.png": {
+          "bytes": 83179,
+          "sha256": "69f0dbfb2c92549a2cb8266a4026cabb9a135e6734ef3af8ae5cc41ef9f1bb92"
+        },
+        "thunderbird.png": {
+          "bytes": 3663,
+          "sha256": "a13bd473511c882860f927e2c617ce30adf9b2186f0ec0faef2d91288c0d1645"
+        },
+        "whatly.png": {
+          "bytes": 140292,
+          "sha256": "be53fd05700b4e3b5fab2a90b313fc80b0e284e3b73f28a0a5a7cb6c9d41ff4f"
         }
       }
     }

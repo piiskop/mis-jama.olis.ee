@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1750095,
-    "sha256": "d217aad96a106b7845b9a9425765fb8fd303062bff97ab06b41ab1dc8cdab074"
+    "bytes": 1750355,
+    "sha256": "cd2b6463637062a5de67b7f5de152af87c026768295f00eb743260d1c25085ae"
   },
   "days": [
     {
@@ -446,6 +446,47 @@
         "whatly.png": {
           "bytes": 140292,
           "sha256": "be53fd05700b4e3b5fab2a90b313fc80b0e284e3b73f28a0a5a7cb6c9d41ff4f"
+        }
+      }
+    },
+    {
+      "date": "2026-11-07",
+      "files": {
+        "calc-freeze.png": {
+          "bytes": 15442,
+          "sha256": "bd12e93d4d9b64d72659b91e531c65874411e0df54eb6a734661537ea60af22e"
+        },
+        "calc-settings.png": {
+          "bytes": 109362,
+          "sha256": "6fb0661232553ef77860b33b29bfc9416f25d9aaeeb5138d19e14e5b3d451419"
+        },
+        "index.html": {
+          "bytes": 15686,
+          "sha256": "3186da04673eb106d4da36c7d7aed3432b3a79dc9acd9bea0ce74b3f55c82235"
+        },
+        "jellyfin.png": {
+          "bytes": 10986,
+          "sha256": "173208db015911572ba194c262a162d7f031e1b8856aae45b6a2ab19b410d256"
+        },
+        "sidebar-support.png": {
+          "bytes": 103626,
+          "sha256": "af52df604d98b1ea961dd33917252cbef8f1148114efc15c762bbf1f4e875654"
+        },
+        "sshfs.png": {
+          "bytes": 60820,
+          "sha256": "9926c99d2b9e71ed84f4e82c2f0df2e8cdd37158303236af7288bb3036699bba"
+        },
+        "whatly-log.png": {
+          "bytes": 12100,
+          "sha256": "97277963f89ed4ca36c5daca29a489b8f7e5a7d765b4ab2a4a0ea3ddaaad3ad2"
+        },
+        "whatly-start.png": {
+          "bytes": 20823,
+          "sha256": "001fe1f962bef00dac67880237f4e9e74c9526a6fa84b77233a5e013238c565a"
+        },
+        "writing-support.png": {
+          "bytes": 85118,
+          "sha256": "3b2975fe457e3e76d84e86878428cdba41aaf2ad79f26852e818fc2d0c03b086"
         }
       }
     }

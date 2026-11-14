@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1750594,
-    "sha256": "bf5d70a3f7f726b1daab3c3c208c447717186a4fe64b33fc10b4b0c3a02b0e65"
+    "bytes": 1751842,
+    "sha256": "4ccf942ae94c552b6f780c0b3350fc156e5b661d4bdca790a2ed177d432a2513"
   },
   "days": [
     {
@@ -491,6 +491,90 @@
       }
     },
     {
+      "date": "2026-11-08",
+      "files": {
+        "index.html": {
+          "bytes": 3523,
+          "sha256": "3aac7676f8da4f6bcf9a4a71c2a170e49eac0abc004bc1ae588e7fef6df131bf"
+        },
+        "pilt-1.png": {
+          "bytes": 16468,
+          "sha256": "2cd71d24e73676d4535083f206865a9003b33bfb67637d3b7498512b6c6a5aad"
+        }
+      }
+    },
+    {
+      "date": "2026-11-09",
+      "files": {
+        "index.html": {
+          "bytes": 4079,
+          "sha256": "8da9e27d5abc27532aff232e280dabf60b9e2a29736f7d3c70f05e5650558251"
+        },
+        "pilt-1.png": {
+          "bytes": 12419,
+          "sha256": "de99442d8bc17c8ee9bd67834d62da87041feffafbe951daa1866c6cc3f276d2"
+        },
+        "pilt-2.png": {
+          "bytes": 10157,
+          "sha256": "fe326db4ceed1332659b85e2973f3a28d3c50adda12db9bd19a14573c333e303"
+        }
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "files": {
+        "index.html": {
+          "bytes": 9821,
+          "sha256": "8b6097ec32e78d3a8b0c7cd512b280b5a41ed32420ded1142d4c16553d6cf633"
+        },
+        "pilt-1.png": {
+          "bytes": 23543,
+          "sha256": "1aa4130eec983217f50b5d93924c21167f25de83220a4b700dbe0b3080ca00a9"
+        },
+        "pilt-11.png": {
+          "bytes": 10489,
+          "sha256": "02d498e112cd405d70f20404e4570b67b948f99b18c02157f91cf1aba9f5c1ad"
+        },
+        "pilt-2.png": {
+          "bytes": 38914,
+          "sha256": "35e83db256d5e0ea10ec35dbdbee202e8a1e54ff9b888626764c440f1fdb0850"
+        },
+        "pilt-3.png": {
+          "bytes": 12780,
+          "sha256": "8b0e898b20635bc8383bdb1297c0f9b7be08d75dcacb983da5dd081a5853587b"
+        },
+        "pilt-4.png": {
+          "bytes": 6117,
+          "sha256": "a18270ee278a1132d2837ba0fa479bca8e4cf2cff01b20037371a8ff625cd59e"
+        },
+        "pilt-5.png": {
+          "bytes": 15741,
+          "sha256": "01c8383b363a4ec456aa3d2aff75e5e87c8a3d0c17fdfb308ab65cbeadf6644f"
+        },
+        "pilt-7.png": {
+          "bytes": 23083,
+          "sha256": "a8ec7bc5bf9c07e0734930a2a718ab46ff1e1b70b548a96c4d66da98a8a40ab1"
+        },
+        "pilt-8.png": {
+          "bytes": 13883,
+          "sha256": "847545720c9c6598d5bf71c6204f2dbecea79ae01e81eacc64f72b2bb4db578f"
+        }
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "files": {
+        "index.html": {
+          "bytes": 3652,
+          "sha256": "372cd8ca759ba05e12bbbae912fa7d651faff8b0d5cc165f50eeb0fe36d46038"
+        },
+        "pilt-2.png": {
+          "bytes": 38463,
+          "sha256": "fef7502dcba6a7a345349a3d8f4b3e8307895c75e1dc95554457ebc3a4734824"
+        }
+      }
+    },
+    {
       "date": "2026-11-12",
       "files": {
         "google.png": {
@@ -508,6 +592,23 @@
         "mathcitymap.png": {
           "bytes": 87536,
           "sha256": "831624938d012889f2486fd570bb0746bebfa4b0c1ed35eeebf2aa6c89893abe"
+        }
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "files": {
+        "index.html": {
+          "bytes": 4311,
+          "sha256": "094e13667a062dd0e6009fec7734cda3647b4800efa72463628bbd228c86c107"
+        },
+        "pilt-1.png": {
+          "bytes": 33843,
+          "sha256": "501e76c5098fc42baa2c1b800871063e30ee7bf657d4aabc8a3903de86055be2"
+        },
+        "pilt-2.png": {
+          "bytes": 52995,
+          "sha256": "4e1eae04681f796df0b706f5fa414551d4c07d1009eb2b241af3fa32fbe531a3"
         }
       }
     }

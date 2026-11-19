@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1751842,
-    "sha256": "4ccf942ae94c552b6f780c0b3350fc156e5b661d4bdca790a2ed177d432a2513"
+    "bytes": 1752862,
+    "sha256": "256e8b4c407f807a8d28bd1e2078362a67bcc5409d29642af98eedbcdd8b43d5"
   },
   "days": [
     {
@@ -609,6 +609,74 @@
         "pilt-2.png": {
           "bytes": 52995,
           "sha256": "4e1eae04681f796df0b706f5fa414551d4c07d1009eb2b241af3fa32fbe531a3"
+        }
+      }
+    },
+    {
+      "date": "2026-11-14",
+      "files": {
+        "index.html": {
+          "bytes": 3651,
+          "sha256": "f997a36b71a1814e38ec414ab4de79b80aeb9300c333373250630d9b6e63833b"
+        }
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "files": {
+        "index.html": {
+          "bytes": 5190,
+          "sha256": "4735c2eef1a71f4e108dad73421b4b6e9e5803537627d53213b5d4b039398914"
+        },
+        "spam-test.png": {
+          "bytes": 147524,
+          "sha256": "6f94cb6444cfac68efe95a674c4f75d42d68a48274c2cdac3602518506c81b37"
+        },
+        "tabloo.png": {
+          "bytes": 23873,
+          "sha256": "ffa1d33ddec6f35af0bb06eebce29771d044ff5de243109120b66e9a08a69e5c"
+        }
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "files": {
+        "andmebaas.png": {
+          "bytes": 70505,
+          "sha256": "f1ac15a9e0bff847104ea887c1e3cfb72e24237f7daa443563c54b4d6ced6ad8"
+        },
+        "index.html": {
+          "bytes": 5236,
+          "sha256": "a4e95559e7eda2f7292903454ff7e556f3d9546921228c458991151ad42bdefd"
+        },
+        "kulgriba.png": {
+          "bytes": 30856,
+          "sha256": "37f9b904b6a49e55d2e64a8aaad25fc595dab7c8a115716849642ce34f3a809d"
+        }
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "files": {
+        "astra.png": {
+          "bytes": 24533,
+          "sha256": "eaf08cd7cbf31d4533acda3f322853de4310d60e7949c3797ad1e9298dfa41f9"
+        },
+        "index.html": {
+          "bytes": 8085,
+          "sha256": "15627204a13ea527f96be25230f77c743311dbc2bfe0996898950f004bbf8934"
+        },
+        "onlyoffice.png": {
+          "bytes": 92737,
+          "sha256": "367ab2d249bb880603f9acd86f4918ec8e6d651d614d30d68b16f3680eb861a2"
+        },
+        "reklaam.png": {
+          "bytes": 495800,
+          "sha256": "cfa9f81d1ecfa077b68ed9a46b29a4b495ed1fbd959977bc8b865b564b8f47ca"
+        },
+        "tabloo.png": {
+          "bytes": 31343,
+          "sha256": "8031d4beeb0406f927fac27f27fdd3e23eb1f1f4238ff2dbab83b5bd61b2cd56"
         }
       }
     }

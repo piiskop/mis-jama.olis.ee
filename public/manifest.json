@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1753137,
-    "sha256": "5aa803ad24da26f8cc0b082f4af473cbfe92cb378e371f2451d5a63835d25b99"
+    "bytes": 1753401,
+    "sha256": "f98bfeb31ba99a2a4fdad1647b4e539be5c0bdecd40788b9b07a0f55afe369d0"
   },
   "days": [
     {
@@ -698,6 +698,43 @@
         "rg-puudub.png": {
           "bytes": 4644,
           "sha256": "01d75db24c46f1d1e205fe571dcfb52b09340008fc41279fed97d161b5bbd7c4"
+        }
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "files": {
+        "index.html": {
+          "bytes": 11331,
+          "sha256": "4d5d70392f084418a75ed51148667c033b3b221049d5ff6aed9b3beb58a40239"
+        },
+        "java-error.png": {
+          "bytes": 9215,
+          "sha256": "4f1799bcf1ad04f6324db4c797c0b6fa435ca3eb747f042dd37c31f8bd9c0875"
+        },
+        "java-ok.png": {
+          "bytes": 18637,
+          "sha256": "937506ed682c92d459ffc1da10a3f60f9407783678e32880d39a9c4eff517f68"
+        },
+        "jpg.png": {
+          "bytes": 15480,
+          "sha256": "e3582b04c7906a6b1ce8065ee18d9844100904fae908075d2ef875059b6c02c0"
+        },
+        "obs.png": {
+          "bytes": 4345,
+          "sha256": "cfcb2e5aa6d43e6a4ad6cb0c7d1c23f168e50b7d3151aae7037f471f870ccb4d"
+        },
+        "onlyoffice.png": {
+          "bytes": 46381,
+          "sha256": "feb7aeae4ccb423a8473443a9eea3059fed556daae8007aabbb314c3b9808f45"
+        },
+        "registry.png": {
+          "bytes": 7711,
+          "sha256": "4cf537f151773e6fdca0503b121384892324ad0a18a9c6580f8f460f71fd1e8f"
+        },
+        "whatsapp.png": {
+          "bytes": 11371,
+          "sha256": "3a6351772518f0f7330b1cfde0a7e75257cf42fc340732820f706765dd8826fe"
         }
       }
     }

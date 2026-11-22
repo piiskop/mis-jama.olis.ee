@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1753401,
-    "sha256": "f98bfeb31ba99a2a4fdad1647b4e539be5c0bdecd40788b9b07a0f55afe369d0"
+    "bytes": 1753671,
+    "sha256": "f0fd135de1711598b1e1c2fa51eb9f57774870eac0b0f50616cef3f6c9dae192"
   },
   "days": [
     {
@@ -735,6 +735,43 @@
         "whatsapp.png": {
           "bytes": 11371,
           "sha256": "3a6351772518f0f7330b1cfde0a7e75257cf42fc340732820f706765dd8826fe"
+        }
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "files": {
+        "bluetooth-ok.png": {
+          "bytes": 5131,
+          "sha256": "426fdcb1cef1ebc625400d794efb8b080fd7aec0c125c03e349b8172ce8d1ac3"
+        },
+        "index.html": {
+          "bytes": 10312,
+          "sha256": "8348ec15091ee607f4e6743c39bf0ca26f384f1fb6d61bc6ec22506aaffe35c1"
+        },
+        "keyboard-error.png": {
+          "bytes": 6642,
+          "sha256": "8bc6b700d2ab571db9f51c0e7fa1e27ad00eee87bdab1180855509b843c48014"
+        },
+        "queue.png": {
+          "bytes": 9068,
+          "sha256": "f1f408f56a1623c3c79f25a9a18d1ed4e8fdafc7b5c5d413f5eabd0f897e09be"
+        },
+        "time-left.png": {
+          "bytes": 34502,
+          "sha256": "0739fc2bdf3c4a1ee06e79c7bfe9a27817a910e2d914041dafa4ee2228713fb5"
+        },
+        "whatly-after.png": {
+          "bytes": 3664,
+          "sha256": "98a480245d359fb6ab3dddc1dcf6efb746b454d84b85493efe6bef13fc754f74"
+        },
+        "whatly-before.png": {
+          "bytes": 4339,
+          "sha256": "bfe6abfea1474794bf700b95c7dbf0c8e410a9ce7a064bcb44a6839611921205"
+        },
+        "whatly-empty.png": {
+          "bytes": 40868,
+          "sha256": "5c968587ccb63cba673cee5d1b6e9a77780601ffc6bb4c12bf807898e769425b"
         }
       }
     }

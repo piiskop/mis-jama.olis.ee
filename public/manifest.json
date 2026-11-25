@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1753671,
-    "sha256": "f0fd135de1711598b1e1c2fa51eb9f57774870eac0b0f50616cef3f6c9dae192"
+    "bytes": 1753933,
+    "sha256": "fff59d9b840574fcb83172d474c87704517f62d83804d86757942caee74b2a66"
   },
   "days": [
     {
@@ -772,6 +772,55 @@
         "whatly-empty.png": {
           "bytes": 40868,
           "sha256": "5c968587ccb63cba673cee5d1b6e9a77780601ffc6bb4c12bf807898e769425b"
+        }
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "files": {
+        "blueman-error.png": {
+          "bytes": 48327,
+          "sha256": "1e5048ec006747887fbe445357397e00b707a80eb18e4bd3cee0deb136629905"
+        },
+        "brave.png": {
+          "bytes": 31765,
+          "sha256": "ed1103d114ce499d9fa55dd4e5518570302200b9a67d59fa01d006ef85382312"
+        },
+        "calendar.png": {
+          "bytes": 65357,
+          "sha256": "5da972fea34307aa501f08599de6eb4be33543722f6e3f584583fd5521c75933"
+        },
+        "chatgpt.png": {
+          "bytes": 22086,
+          "sha256": "3a09b08d8a5dd785fd8b74bf4399214592572938555f57700ec100f5562ca973"
+        },
+        "index.html": {
+          "bytes": 14297,
+          "sha256": "4fc66da54e756449a77270556ca7f6672cbddcb204773c578da5182b634fa83d"
+        },
+        "jasp-error.png": {
+          "bytes": 13396,
+          "sha256": "681f2d11aadd0d1a6753e96a4ca72c608ec0696fa5ede70a7cf19f3829e2a82c"
+        },
+        "jasp-open.png": {
+          "bytes": 177265,
+          "sha256": "871ff8d71b57820f6934ae133d2a72adef378c58f85b00a70db720de4c2777eb"
+        },
+        "obs-after.png": {
+          "bytes": 126092,
+          "sha256": "203ad4970142f617e24905c95e7fdd28e96937e0fec6b41dea105a3be30127ed"
+        },
+        "obs-before.png": {
+          "bytes": 96917,
+          "sha256": "9a3031924834a86f28c2b8a6a795f1c42dade2cbb3c8e2387d6bdc5fc553eb0c"
+        },
+        "sound.png": {
+          "bytes": 5935,
+          "sha256": "7cb0b3ac80d3835bf16da67c838454a18b1c7758b0aceb63121f740991996d4b"
+        },
+        "support.png": {
+          "bytes": 97467,
+          "sha256": "c6c04e186e334b24c25eb7d5282870a0772b8517b6fa2f94eba781f644d5f327"
         }
       }
     }

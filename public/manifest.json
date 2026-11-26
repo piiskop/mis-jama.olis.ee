@@ -1,8 +1,8 @@
 {
   "version": 1,
   "index": {
-    "bytes": 1753933,
-    "sha256": "fff59d9b840574fcb83172d474c87704517f62d83804d86757942caee74b2a66"
+    "bytes": 1754215,
+    "sha256": "0b4d6a25355a4b45a938660117d4fdb7420228239f839454850fd9c4177d04a2"
   },
   "days": [
     {
@@ -821,6 +821,51 @@
         "support.png": {
           "bytes": 97467,
           "sha256": "c6c04e186e334b24c25eb7d5282870a0772b8517b6fa2f94eba781f644d5f327"
+        }
+      }
+    },
+    {
+      "date": "2026-11-25",
+      "files": {
+        "audio.png": {
+          "bytes": 24349,
+          "sha256": "788caad1d0c944e08ba26a579f9a7ef44de9a2355835ee666e01047e13c4a5b8"
+        },
+        "index.html": {
+          "bytes": 12857,
+          "sha256": "f64e64549a212ea5834c6bdf632af15ddde4203958d17c18558a19208938258d"
+        },
+        "mail-clean.png": {
+          "bytes": 2262,
+          "sha256": "43608b1bad8cdf52dc1988f7666ae35fe945599bd70d677709630c8c1ac93474"
+        },
+        "mail-inbox.png": {
+          "bytes": 3286,
+          "sha256": "c84d3bb056c2bc82eb264aa8f407c96770374c2a2419f164a17fa6ee84f80a11"
+        },
+        "mail-score.png": {
+          "bytes": 2100,
+          "sha256": "19d546cb25316322032b96903fea18b6ec4c33185b9619b1e4c8cd1dd2c42ef6"
+        },
+        "mcm.png": {
+          "bytes": 139985,
+          "sha256": "5d0ace6dc8b64d66d74c065e2f811821799b9410658343d18a6312d3aceddfe1"
+        },
+        "store.png": {
+          "bytes": 49861,
+          "sha256": "f5538fd03ac55ff33ad2d295a4f5d3bc8cb675c99659bc8b2c78d18913d38eef"
+        },
+        "thunder.png": {
+          "bytes": 24809,
+          "sha256": "e65f502aaebfa08da623f30c594e8cf2db2c1179b3aa421b6a8ec0e182fd176d"
+        },
+        "upgrade.png": {
+          "bytes": 45668,
+          "sha256": "03fa3969664bf3c3e79252ff139e3b3b8dc839cc199f77373b08c9d7aa2f492d"
+        },
+        "whatsapp.png": {
+          "bytes": 65822,
+          "sha256": "a9de07a92c081c44262935291c329b5132da3188453778f3b0340ddbbaa76d6c"
         }
       }
     }
